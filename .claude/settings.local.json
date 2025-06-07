@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:wave.webaim.org)",
+      "Bash(mkdir:*)",
+      "Bash(npm test)",
+      "Bash(npm install)",
+      "Bash(npm run lint)",
+      "Bash(npx eslint:*)"
+    ],
+    "deny": []
+  }
+}
