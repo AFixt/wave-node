@@ -1,6 +1,9 @@
-# wave-node
+# @afixt/wave-node
 
 Node.js client for the WAVE (WebAIM) accessibility testing API. Written in TypeScript with full type definitions included.
+
+[![npm version](https://img.shields.io/npm/v/@afixt/wave-node.svg)](https://www.npmjs.com/package/@afixt/wave-node)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 
@@ -15,8 +18,26 @@ Node.js client for the WAVE (WebAIM) accessibility testing API. Written in TypeS
 
 ## Installation
 
+### From NPM (Recommended)
+
 ```bash
+# Using npm
 npm install @afixt/wave-node
+
+# Using yarn
+yarn add @afixt/wave-node
+
+# Using pnpm
+pnpm add @afixt/wave-node
+```
+
+### From Source
+
+```bash
+git clone https://github.com/karlgroves/wave-node.git
+cd wave-node
+npm install
+npm run build
 ```
 
 ## Prerequisites
@@ -65,18 +86,22 @@ console.log(`Features: ${Object.keys(result.categories.feature || {}).length}`);
 
 ### Demo Files
 
-The package includes two demo files that show practical examples of using the WAVE API:
+The package source includes two demo files that show practical examples of using the WAVE API. These demos are not included when you install from NPM, but are available in the GitHub repository.
 
-#### test-url.js - Analyze a Public URL
+#### Running the Demos
 
-To run the demos, first clone the repository:
+To run the demos, you'll need to clone the repository:
 
 ```bash
 git clone https://github.com/karlgroves/wave-node.git
 cd wave-node
 npm install
 npm run build
+```
 
+#### test-url.js - Analyze a Public URL
+
+```bash
 # Set your API key
 export WAVE_API_KEY=your_api_key_here
 
